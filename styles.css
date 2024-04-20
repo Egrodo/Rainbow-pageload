@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+
+.rainbowLinesWrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.rainbowLine {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  background-color: blue;
+
+  animation-name: slideAway;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideAway {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 1%;
+  }
+}
+
+.rainbowLine:nth-of-type(1) {
+  background-color: rgb(135, 126, 5);
+  animation-delay: 1s;
+}
+
+.rainbowLine:nth-of-type(2) {
+  background-color: rgb(143, 102, 3);
+  animation-delay: 1.2s;
+}
+
+.rainbowLine:nth-of-type(3) {
+  background-color: rgb(174, 33, 20);
+  animation-delay: 1.3s;
+}
+
+.rainbowLine:nth-of-type(4) {
+  background-color: rgb(128, 39, 62);
+  animation-delay: 1.4s;
+}
+
+.rainbowLine:nth-of-type(5) {
+  background-color: rgb(85, 40, 86);
+  animation-delay: 1.5s;
+}
+
+.rainbowLine:nth-of-type(6) {
+  background-color: rgb(42, 43, 87);
+  animation-delay: 1.6s;
+}
+
+.rainbowLine:nth-of-type(7) {
+  background-color: rgb(8, 60, 90);
+  animation-delay: 1.7s;
+}
+
+.rainbowLine:nth-of-type(8) {
+  background-color: rgb(14, 88, 86);
+  animation-delay: 1.8s;
+}
+
+.rainbowLine:nth-of-type(9) {
+  background-color: rgb(16, 115, 59);
+  animation-delay: 1.9s;
+}
+
+.rainbowLine:nth-of-type(10) {
+  background-color: rgb(65, 140, 63);
+  animation-delay: 2s;
+}
+
+.rainbowLine:nth-of-type(11) {
+  background-color: rgb(75, 114, 52);
+  animation-delay: 2.1s;
+}
